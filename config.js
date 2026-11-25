@@ -9,7 +9,7 @@ window.CONFIG = {
 // THIS IS A READONLY API KEY. If you abuse it  , i hate you, and ur gay as fuck for that. 
   lastfm: { user: 'Ragaire', apiKey: '5e3ba1781e3310c6e705010d538f9b33' },
 
-  favouriteGames: [''],
+  favouriteGames: [],
 
   limits: { topSongs: 5, topAlbums: 10 },
 };
