@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#161616">
+    <title>TBX3</title>
+    <link rel="preload" href="fonts/archivo-black.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="data:,">
+    <script src="config.js"></script>
+    <script src="music.js"></script>
+    <script src="music.spotify.js"></script>
+    <script src="steam.js"></script>
+    <script src="app.js" defer></script>
+    <script src="wave.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wave">
+        <h1 id="title">TBX3</h1>
+        <canvas aria-hidden="true"></canvas>
+      </div>
+      <p class="aka" id="aka"></p>
+      <nav id="links" aria-label="Links"></nav>
+    </header>
+
+    <main>
+      <section id="now" hidden>
+        <h2>Listening now</h2>
+        <div class="card now"></div>
+      </section>
+
+      <section id="steam">
+        <h2>Steam</h2>
+        <div class="card steam"></div>
+      </section>
+
+      <section id="favourites">
+        <h2>Favourite songs</h2>
+        <ol class="tracks plain"></ol>
+      </section>
+
+      <section id="top-songs">
+        <h2>Top songs</h2>
+        <ol class="tracks"></ol>
+      </section>
+
+      <section id="top-albums">
+        <h2>Top albums</h2>
+        <ol class="albums"></ol>
+      </section>
+    </main>
+
+    <footer>Previews via Deezer · Listening via Last.fm</footer>
+  </body>
+</html>
