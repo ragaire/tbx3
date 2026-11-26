@@ -109,3 +109,20 @@ footer { text-align: center; color: var(--faint); font-size: 11px; padding: 0 24
   .live .dot { animation: none; }
   .album .cover { transition: none; }
 }
+
+/* Opening intro (intro.js) */
+.intro-on body > :not(#intro) { visibility: hidden; }
+#intro {
+  position: fixed; inset: 0; z-index: 100; background: var(--bg); cursor: pointer;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+#intro .slide {
+  position: absolute; inset: 0; background: center / cover no-repeat;
+  opacity: 0; transform: scale(1.08);
+  transition: opacity 0.45s ease, transform 3s ease-out;
+}
+#intro .slide.on { opacity: 1; transform: scale(1); }
+#intro.out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  #intro, #intro .slide { transition: opacity 0.4s ease; transform: none; }
+}
